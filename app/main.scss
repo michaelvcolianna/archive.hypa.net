@@ -1,0 +1,127 @@
+:root {
+  --color-background: #4f555b;
+  --color-foreground: #fff;
+  --color-link: #fae137;
+  --color-link-hover: #f00;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  margin: 0;
+}
+
+* {
+  &,
+  &::after,
+  &::before {
+    box-sizing: border-box;
+  }
+}
+
+a {
+  font-weight: 700;
+  text-decoration: none;
+
+  &,
+  &:active,
+  &:visited {
+    color: var(--color-link);
+  }
+
+  &:focus,
+  &:hover {
+    color: var(--color-link-hover);
+    text-decoration: underline;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+#branding {
+  background-image: url('/tiling1_right.gif');
+  background-position-x: -1px;
+  display: flex;
+}
+
+#info {
+  background-image: url('/tiling2_right.gif');
+  display: flex;
+}
+
+#nav-shadow {
+  left: -24px;
+  margin-right: -28px;
+  position: relative;
+  transform: scaleX(-1);
+}
+
+main {
+  h1 {
+    background-image: url('/tiling3_right.gif');
+    margin: 0;
+  }
+}
+
+footer {
+  padding: 25px 10px 20px 20px;
+}
+
+#home {
+  display: grid;
+  grid-template-columns: 331px 288px 172px;
+  margin-top: 7px;
+
+  #content {
+    display: grid;
+    gap: 20px;
+    padding: 9px 10px 0 20px;
+  }
+
+  .content {
+    display: grid;
+    gap: 13px;
+  }
+
+  #links {
+    img {
+      margin-bottom: 3px;
+    }
+
+    strong {
+      padding-left: 40px;
+      padding-top: 1px;
+    }
+
+    ul {
+      margin-top: 0;
+    }
+  }
+
+  #price-buttons {
+    left: -1px;
+    position: relative;
+  }
+}
+
+#services {
+  padding: 3px 20px 0 23px;
+
+  #content {
+    display: grid;
+    gap: 4px;
+    grid-template-columns: repeat(2, 1fr);
+    width: 414px;
+  }
+
+  .service {
+    img {
+      margin-bottom: 4px;
+    }
+  }
+}
