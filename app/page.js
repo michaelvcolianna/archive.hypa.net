@@ -36,9 +36,17 @@ export default function Home() {
         </div>
 
         <div id="price-buttons">
-          <Image alt="Small Office: $19.95" src="/price-tags_01.gif" height={81} width={172} />
-          <Image alt="Office Solution: $39.95" src="/price-tags_02.gif" height={78} width={172} />
-          <Image alt="Complete Office: $99.95" src="/price-tags_03.gif" height={82} width={172} />
+          <a href="/services/hosting">
+            <Image alt="Small Office: $19.95" src="/price-tags_01.gif" height={81} width={172} />
+          </a>
+
+          <a href="/services/hosting">
+            <Image alt="Office Solution: $39.95" src="/price-tags_02.gif" height={78} width={172} />
+          </a>
+
+          <a href="/services/wireless/pricing">
+            <Image alt="Complete Office: $99.95" src="/price-tags_03.gif" height={82} width={172} />
+          </a>
         </div>
       </div>
     </>

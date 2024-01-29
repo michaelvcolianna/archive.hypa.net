@@ -11,6 +11,7 @@ body {
   font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 11px;
   margin: 0;
+  width: 791px;
 }
 
 * {
@@ -72,6 +73,19 @@ footer {
   padding: 25px 10px 20px 20px;
 }
 
+
+.cards {
+  display: grid;
+  gap: 4px;
+  grid-template-columns: repeat(2, 1fr);
+  width: 414px;
+
+  img {
+    margin-bottom: 4px;
+  }
+}
+
+
 #home {
   display: grid;
   grid-template-columns: 331px 288px 172px;
@@ -109,19 +123,12 @@ footer {
   }
 }
 
-#services {
+.grid {
   padding: 3px 20px 0 23px;
+}
 
-  #content {
-    display: grid;
-    gap: 4px;
-    grid-template-columns: repeat(2, 1fr);
-    width: 414px;
-  }
-
-  .service {
-    img {
-      margin-bottom: 4px;
-    }
+#support {
+  .link {
+    text-align: right;
   }
 }

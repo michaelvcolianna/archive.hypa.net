@@ -1,3 +1,3 @@
-export default function ContentBlock({ children }) {
-  return <div id="content">{children}</div>
+export default function ContentBlock({ classes = undefined, children }) {
+  return <div id="content" className={classes}>{children}</div>
 }
