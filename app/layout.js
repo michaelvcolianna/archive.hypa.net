@@ -5,6 +5,7 @@ import './main.scss'
 export const metadata = {
   title: 'Hypa.NET - Premium Web Hosting',
   description: 'Premium hosting services - (877) 620 7331',
+  robots: 'noai, noimageai'
 }
 
 export default function RootLayout({ children }) {
